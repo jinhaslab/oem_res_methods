@@ -1,0 +1,32 @@
+project:
+  type: book
+  output-dir: docs
+
+book:
+  title: "직업환경의학연구방법론"
+  author: "jinha"
+  date: "2023. 11. 30."
+  chapters:
+    - index.qmd
+    - part: "I. 직무스트레스"
+      chapters:
+        - 210_jobstress1.qmd
+        - 210_jobstress2.qmd
+        
+#bibliography: references.bib
+
+format:
+  html:
+    #css: style.css
+    theme:
+      light: flatly
+      dark: darkly
+    css: |
+      table {
+        font-family: 'Times New Roman', serif;
+      }
+  pdf:
+    documentclass: scrreprt
+    prefer-html: true
+
+editor: visual
